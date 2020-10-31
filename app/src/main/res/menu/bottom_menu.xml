@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_action"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:orderInCategory="0"
+        android:title="menu_home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/favorit_action"
+        android:icon="@drawable/ic_favorit"
+        android:orderInCategory="1"
+        android:title="menu_favorit"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile_action"
+        android:icon="@drawable/ic_profile"
+        android:orderInCategory="2"
+        android:title="menu_profile"
+        app:showAsAction="always" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/camera_action"-->
+    <!--        android:icon="@drawable/ic_camera"-->
+    <!--        app:showAsAction="always"-->
+    <!--        android:orderInCategory="4"-->
+    <!--        android:title="@string/camera_menu" />-->
+
+    <item
+        android:id="@+id/history_action"
+        android:icon="@drawable/ic_history"
+        android:orderInCategory="3"
+        android:title="menu_history"
+        app:showAsAction="always" />
+
+
+</menu>
