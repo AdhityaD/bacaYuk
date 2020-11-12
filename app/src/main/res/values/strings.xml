@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Android Trivia</string>
     <string name="game_over">Game Over</string>
     <string name="try_again">Try Again?</string>
@@ -38,4 +38,30 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="baca_yuk">Baca Yuk</string>
     <string name="informasi">Informasi</string>
+
+
+
+    <string name="geographyTitle">Si Kancil</string>
+    <string name="geographyTextEn" tools:ignore="TypographyEllipsis">Pada suatu hari Kancil sedang berjalan-jalan di hutan. Tiba-tiba perutnya terasa lapar. Lalu ia melihat ada banyak buah segar yang ada di seberang sungai deras. Kancil pun bingung, bagaimana caranya ia dapat melewati sungai untuk mendapatkan makanan.
+Akhirnya, Kancil menemukan ide cemerlang untuk dapat menyeberangi sungai. Lalu Kancil pun memanggil seekor buaya yang tinggal di dalam sungai.
+"Hey buaya keluarlah, aku punya kabar gembira"
+Mendengar suara Kancil, akhirnya seekor buaya keluar dan mendekati Kancil.
+"Ada apa Kancil, kau mengganggu tidurku!" sahut sang buaya.
+"Aku akan membagikan banyak daging segar untuk kalian" kata Kancil dengan wajah ceria.
+"Di mana daging itu?" jawab buaya dengan raut wajah buasnya.
+"Sepertinya dagingnya cukup banyak, kau harus memanggil teman-temanmu untuk memakannya juga.
+Akhirnya buaya besar itu memanggil kawanan buaya yang lain. Setelah semua berkumpul, Kancil meminta mereka untuk berbaris rapi.
+"Untuk apa kami harus berbaris?" tanya sang buaya
+"Aku harus menghitung berapa jumlah kalian untuk membagikan daging secara merata"
+Kancil pun berhasil meyakinkan mereka dan buaya-buaya tersebut membuat barisan seperti membentuk sebuah jembatan.
+"Baik aku akan mulai menghitung, satu... dua... tiga..." kata Kancil sambil menginjak satu per satu buaya melewati aliran sungai yang deras.
+Kancil pun berhasil menyebrangi sungai dengan melewati sekumpulan buaya itu. Setelah itu ia tertawa terbahak-bahak.
+"Hahahaha sebenarnya aku tak membawa daging sedikit pun, aku hanya ingin kalian berbaris agar aku dapat menyeberang sungai. Ternyata mudah sekali memanfaatkan kalian!" kata Kancil
+Sekelompok buaya tersebut akhirnya marah dan hendak memakan Kancil. Tetapi sudah terlambat karena Kancil sudah lari menjauh dari mereka.
+Cerita ini membuktikan bahwa kecerdikan dapat mengalahkan kekuatan.</string>
+    <string name="geographyTextFr">L\'étude des reliefs de la Terre est appelée géographie physique. Les reliefs peuvent être des montagnes et des vallées. Il peut aussi s\'agira de glaciers, delacs ou de rivières. Les reliefs sont parfois appelés caractéristiques physiques. Il est important que les élèves connaissent la géographie physique de laTerre. Les saisons, l\'atmosphère et tous les processus naturels de la Terre affectent l\'endroit où les gens sont capables de vivre. La géographie est l\'un desfacteurs que les gens utilisent pour décider où ils veulent vivre. Les caractéristiques physiques d\'une
+        région sont souvent riches en ressources. Àl\'intérieur d\'une nation, les chaînes de montagnes deviennent des frontières naturelles pour les zones de peuplement. Aux États-Unis, les principaleschaînes de montagnes sont la Sierra Nevada, les montagnes Rocheuses et les Appalaches.Les sources d\'eau douce influencent également l\'endroit où lesgens s\'installent. Les gens ont besoin d\'eau pour boire. Ils en ont aussi besoin pour se laver. Tout au long de l\'histoire,
+        les gens se sont installés près del\'eau douce. Vivre près d\'une source d\'eau permet de s\'assurer que les gens ont l\'eau dont ils ont besoin. Il y avait un bonus supplémentaire, aussi. L\'eaupourrait être utilisée comme voie de voyage pour les personnes et les marchandises. Beaucoup d\'Américains vivent près des sources d\'eau populaires,telles que le fleuve Mississippi, le fleuve Colorado et les
+        Grands Lacs.Mountains et les déserts ont été installés par moins de gens que les zones desplaines. Cependant, ils disposent de ressources précieuses.Les gens ont une réponse.</string>
+    <string name="immersiveReaderButtonText">Immersive Reader</string>
 </resources>
