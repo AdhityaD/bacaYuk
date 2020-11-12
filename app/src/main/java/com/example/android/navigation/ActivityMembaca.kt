@@ -48,7 +48,10 @@ class ActivityMembaca : AppCompatActivity() {
 
     private lateinit var contextualWebView: WebView
 
-
+    // Assigns values to the objects sent to the Immersive Reader SDK,
+    // acquires the token and authorizes the app, then launches
+    // the Web View to get the response and load the Immersive Reader
+    // when the button is clicked in HTML.
     private suspend fun handleLoadImmersiveReaderWebView() {
         val exampleActivity = this
         val subdomain = dotEnv["SUBDOMAIN"]
@@ -56,11 +59,17 @@ class ActivityMembaca : AppCompatActivity() {
         val irText1 = findViewById<TextView>(R.id.Content1)
         val irText2 = findViewById<TextView>(R.id.Content2)
 
+
+        // The content of the request that's shown in the Immersive Reader.
+        // This basic example contains chunks of two different languages.
+
+        //kancil bahasa indo
         val chunk1 = Chunk()
         chunk1.content = irText1.text.toString()
         chunk1.lang = "en"
         chunk1.mimeType = "text/plain"
 
+        //kancil bahasa prancis
         val chunk2 = Chunk()
         chunk2.content = irText2.text.toString()
         chunk2.lang = "fr"
@@ -74,6 +83,7 @@ class ActivityMembaca : AppCompatActivity() {
         content.title = irTitle.text.toString()
         content.chunks = chunks
 
+        // Options may be assigned values here (e.g. options.uiLang = "en").
         val options = Options()
 
         var token: String
@@ -88,6 +98,8 @@ class ActivityMembaca : AppCompatActivity() {
 
     }
 
+    // The next two functions get the token from the Immersive Reader SDK
+    // and authorize the app.
     private fun getImmersiveReaderTokenAsync(): String {
         return getToken()
     }
@@ -140,7 +152,7 @@ class ActivityMembaca : AppCompatActivity() {
 
     }
 
-
+    // To be assigned values and sent to the Immersive Reader SDK
     class Chunk(var content: String? = null,
                 var lang: String? = null,
                 var mimeType: String? = null)
@@ -154,7 +166,8 @@ class ActivityMembaca : AppCompatActivity() {
                   var launchToPostMessageSentDurationInMs: Int? = null,
                   var options: Options? = null)
 
-
+    // Only includes Immersive Reader options relevant to Android apps.
+    // For a complete list, visit https://docs.microsoft.com/azure/cognitive-services/immersive-reader/reference
     class Options(var uiLang: String? = null, // Language of the UI, e.g. en, es-ES (optional). Defaults to browser language if not specified.
                   var timeout: Int? = null, // Duration (in milliseconds) before launchAsync fails with a timeout error (default is 15000 ms).
                   var uiZIndex: Int? = null, // Z-index of the iframe that will be created (default is 1000)
@@ -167,6 +180,7 @@ class ActivityMembaca : AppCompatActivity() {
     class Error(var code: String? = null,
                 var message: String? = null)
 
+    // A custom Web View component that launches inside the app
     @Throws(IOException::class)
     fun loadImmersiveReaderWebView(
 
@@ -204,6 +218,7 @@ class ActivityMembaca : AppCompatActivity() {
                 contextualWebViewSettings.setSupportZoom(true)
                 contextualWebView.setInitialScale(1)
 
+                // Enables WebView Cookies
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     android.webkit.CookieManager.getInstance().setAcceptThirdPartyCookies(contextualWebView, true)
                 } else {
