@@ -28,6 +28,7 @@ class ActivityMembaca : AppCompatActivity() {
         setContentView(R.layout.activity_membaca)
         val immersiveReaderButton = findViewById<Button>(R.id.LaunchImmersiveReaderButton)
         immersiveReaderButton.setOnClickListener { GlobalScope.launch { handleLoadImmersiveReaderWebView() } }
+
     }
 
     //Button Back di HP
